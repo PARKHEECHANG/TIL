@@ -1,4 +1,4 @@
-```
+```python
 N, K = map(int, input().split()) # 여러 정수 입력 받기
 
 data = list(map(int, input().split())) # 여러 정수 리스트에 넣기
