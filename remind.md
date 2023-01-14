@@ -3,4 +3,4 @@
 * 배열이나 스택 등을 테스트케이스 반복문 밖에서 초기화하는 실수 조심
 
 * [백준 13458 시험 감독 => 문제를 풀기 전, 복잡도 계산+타입 설정 주의 int,long,double](https://www.acmicpc.net/problem/13458)
-* [백준 24416 - 메서드 선언, 스태틱 변수와 배열 활용](https://www.acmicpc.net/source/53436724)
+* [백준 24416 피보나치 (DP기본) - 메서드 선언, 스태틱 변수와 배열 활용](https://www.acmicpc.net/source/53436724)
