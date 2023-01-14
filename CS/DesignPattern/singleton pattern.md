@@ -52,7 +52,7 @@ public class Main {
 true
 */
 ```
-
+---
 ### 데이터베이스 연결 모듈에 사용되는 싱글톤 패턴
 ```javascript
 const URL = 'http://localhost:8080
