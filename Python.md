@@ -1,3 +1,4 @@
+```
 N, K = map(int, input().split()) # 여러 정수 입력 받기
 
 data = list(map(int, input().split())) # 여러 정수 리스트에 넣기
@@ -17,3 +18,4 @@ arr = [[0 for j in range(cols)] for i in range(rows)] # 이차원 리스트 선�
 
 for i in range(len(arr)) :
     for j in range(len(arr[i])) : # 이차원 리스트 반복문
+```
