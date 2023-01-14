@@ -53,3 +53,22 @@ true
 */
 ```
 
+# 데이터베이스 연결 모듈에 사용되는 싱글톤 패턴
+```javascript
+const URL = 'http://localhost:8080
+const connection = url => ({"url : url})
+class DB {
+    constructor(url) {
+        if(!DB.instance) {
+            DB.instance = connection(url)
+        }
+        return DB.instance
+    }
+    connect() {
+        return this.instance
+    }
+}
+const a = new DB(url)
+const b = new DB(url)
+console.log(a==b)
+```
