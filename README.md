@@ -1,10 +1,10 @@
 # TIL
 ---
 
-[Java](https://github.com/PARKHEECHANG/TIL/blob/master/Java.md).
+[Java](https://github.com/PARKHEECHANG/TIL/blob/master/Java.md)
 
 
-[Python](https://github.com/PARKHEECHANG/TIL/blob/master/Python.md).
+[Python](https://github.com/PARKHEECHANG/TIL/blob/master/Python.md)
 
 
-[review](https://github.com/PARKHEECHANG/TIL/blob/master/review.md).
+[review](https://github.com/PARKHEECHANG/TIL/blob/master/review.md)
