@@ -14,7 +14,7 @@
 
 **모듈 교체, 테스팅, 마이그레이션 수월
 
-**의존성 방향 일관, 모듈 간 관계 명확
+**일관된 의존성 방향, 모듈 간 관계 명확
 
 ---
 
@@ -24,4 +24,32 @@
 
 **모듈들이 분리 => 클래스 수 증가 => 복잡 + 런타임 페널티
 
+```java
+class Singleton {
+    private static class SingleInstance {
+        private static final Singleton instance = new Singleton();
+    }
+    public static Singleton getInstance() {
+        return SingleInstance.instance;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Singleton a = Singleton.getInstance();
+        Singleton b = Singleton.getInstance();
+
+        // hashcode는 객체를 식별하는 Integer 값
+        System.out.println(a.hashCode());
+        System.out.println(b.hashCode());
+        System.out.println(a==b);
+    }
+}
+
+/* 출력 결과
+1784662007
+1784662007
+true
+*/
+```
 
