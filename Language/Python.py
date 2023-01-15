@@ -47,5 +47,6 @@ elif (n.islower()) :        # elif(97 <= ord(n) <= 122) :
     print("소문자입니다")    #     print("소문자입니다")
 
 
-
+# 전역 변수 global
+# 함수 외부에서 선언된 변수, 함수 내에서 global 키워드로 재선언해야 접근 가능
 
