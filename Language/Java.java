@@ -1,4 +1,3 @@
-``` java
 for(int j=0; j<n; i++) // * j변수에 i++ 조심...
 
 Arrays.sort(arr, Comparator.comparingInt(o1 -> o1[0])); // * 이중배열 정렬
@@ -18,4 +17,3 @@ import java.util.LinkedList;
 import java.util.Stack;
 import java.util.Queue;
 import java.util.StringTokenizer;
-```
