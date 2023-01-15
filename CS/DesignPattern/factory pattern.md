@@ -66,8 +66,8 @@ class SUV extends Car {
 public class Main {
     public static void main(String[] args) throws Exception {
         // 하위 클래스(Sedan||SUV)에서 생성한 것을 상위 클래스에 주입 (의존성 주입)
-        Car sedan = CarFactory.getCar("Sedan", "SD-001");
-        Car suv = CarFactory.getCar("SUV", "SV-002");
+        Car sedan = CarFactory.getCar("Sedan", "SD-001"); // (type, model)
+        Car suv = CarFactory.getCar("SUV", "SV-002");     // (type, model)
         System.out.println("sedan :: " + sedan);
         System.out.println("suv :: " + suv);
     }
