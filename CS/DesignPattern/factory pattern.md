@@ -14,15 +14,6 @@
 
 
 ```java
-abstract class Car {
-    public abstract String getModel();
-
-    @Override
-    public String toString() {
-        return "model is " + this.getModel();
-    }
-} // Car
-
 // 상위 클래스(CarFactory)에서 인스턴스를 생성하지 않음
 // 상위 클래스(CarFactory)에서 static 정적 메서드로 호출 => 메모리 절약, 자유로운 함수 정의
 class CarFactory {
@@ -35,8 +26,16 @@ class CarFactory {
         }
         return null;
     }
-} // CarFactory
+}
 
+abstract class Car {
+    public abstract String getModel();
+
+    @Override
+    public String toString() {
+        return "model is " + this.getModel();
+    }
+}
 
 class Sedan extends Car {
     private String model;
@@ -49,7 +48,7 @@ class Sedan extends Car {
     public String getModel() {
         return this.model;
     }
-} // Sedan
+}
 
 class SUV extends Car {
     private String model;
@@ -62,7 +61,7 @@ class SUV extends Car {
     public String getModel() {
         return this.model;
     }
-} // SUV
+}
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -72,7 +71,7 @@ public class Main {
         System.out.println("sedan :: " + sedan);
         System.out.println("suv :: " + suv);
     }
-} // Main
+}
 
 /* 출력 결과
 sedan :: model is SD-001
