@@ -18,4 +18,6 @@ arr = [[0 for j in range(cols)] for i in range(rows)] # 이차원 리스트 선�
 
 for i in range(len(arr)) :
     for j in range(len(arr[i])) : # 이차원 리스트 반복문
+    
+list = [0 for i in range(n)] # 리스트 길이 지정
 ```
