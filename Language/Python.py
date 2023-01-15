@@ -20,7 +20,7 @@ for i in range(len(arr)) :
     
 list = [0 for i in range(n)] # 리스트 길이 지정
 
-        ####리스트 병합, 추가####
+              ####리스트 병합, 추가####
         l = list(map(int, input().split()))
         n = int(input())
         l2 = [n,n+1,n+2]
@@ -33,7 +33,7 @@ list = [0 for i in range(n)] # 리스트 길이 지정
         l = list(map(int, input().split()))
         n = int(input())
         for i in range(3) :
-            l += [n] # 리스트 요소 추가할 때 ★대괄호
+            l += [n] # 리스트 요소 추가할 때 대괄호
             n+=1
-        #########################
+        #############################################
 
