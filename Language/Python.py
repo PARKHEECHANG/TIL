@@ -39,3 +39,13 @@ list = [0 for i in range(n)] # 리스트 길이 지정
 
 ord('A') # A를 아스키코드로 변환
 chr(65) # 아스키코드를 문자로 변환
+
+n = input()
+if(n.isupper()) :           # if(97 > ord(n) >= 65) :
+    print("대문자입니다")    #     print("대문자입니다")
+elif (n.islower()) :        # elif(ord(n) >= 98) :
+    print("소문자입니다")    #     print("소문자입니다")
+
+
+
+
