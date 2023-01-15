@@ -23,8 +23,9 @@ abstract class Car {
     }
 } // Car
 
+// 상위 클래스(CarFactory)에서 인스턴스를 생성하지 않음
+// 상위 클래스(CarFactory)에서 static 정적 메서드로 호출 => 메모리 절약, 자유로운 함수 정의
 class CarFactory {
-
     public static Car getCar(String type, String model) {
         // main에서 전달받은 타입에 따라 다른 객체 생성
         if ("Sedan".equalsIgnoreCase(type)) {
@@ -35,8 +36,7 @@ class CarFactory {
         return null;
     }
 } // CarFactory
-// 상위 클래스(CarFactory)에서 인스턴스를 생성하지 않음
-// 상위 클래스(CarFactory)에서 static 정적 메서드로 호출 => 메모리 절약, 자유로운 함수 정의
+
 
 class Sedan extends Car {
     private String model;
