@@ -6,3 +6,5 @@
 * [백준 24416 피보나치 (DP기본) - 메서드 선언, 스태틱 변수와 배열 활용](https://www.acmicpc.net/source/53436724)
 
 * 아스키 코드 48:'0', 65:'A', 97:'a'
+
+* 변수명 짓기 https://www.curioustore.com/#!/
