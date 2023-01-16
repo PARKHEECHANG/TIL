@@ -54,4 +54,21 @@ n = 0
 print(id(n)) # 주소값
 # 출력 : 2424264026384
 
+print("""줄
+바
+꿈""")
 
+bool(0) = False
+bool(1) = True
+bool(123123) = True
+bool(-1) = True
+
+
+lst = [1,2,3,4,5]
+print(*lst) # 괄호, 콤마 제거 후 출력
+1 2 3 4 5
+
+# set - 리스트 중복 제거
+lst = [2,2,2,2,2,3,3,3,1,1,1,5,5,4]
+lst = set(lst)
+print(lst)
