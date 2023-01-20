@@ -38,13 +38,16 @@
 * 여러 json 파일에 접근을 반복하는 법을 모름
 ##### 풀이
 
-~~검색을 통해 폴더 내에 json파일 경로를 하나씩 반복하여 추출하는 코드 사용~~
+~~검색을 통해 폴더 내에 json파일 경로를 하나씩 반복하여 추출하는 코드 사용
+
 ~~import os
 for (root, directories, files) in os.walk(dir_path):
     for file in files:
         file_path = os.path.join(root, file)
-open 경로를 f-string을 이용해 json파일 경로 변경 가능
-open(f'{file_path}', encoding='utf-8')~~
+
+~~open 경로를 f-string을 이용해 json파일 경로 변경 가능
+
+~~open(f'{file_path}', encoding='utf-8')~~
 
 * 반복문을 통해 영화 정보에서 id 추출
 * 그 id를 f-string을 통해 json 외부 파일 경로 설정
