@@ -47,7 +47,7 @@ for (root, directories, files) in os.walk(dir_path):
 
 ~~open 경로를 f-string을 이용해 json파일 경로 변경 가능
 
-~~open(f'{file_path}', encoding='utf-8')~~
+~~open(f'{file_path}', encoding='utf-8')
 
 * 반복문을 통해 영화 정보에서 id 추출
 * 그 id를 f-string을 통해 json 외부 파일 경로 설정
