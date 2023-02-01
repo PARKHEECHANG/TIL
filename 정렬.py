@@ -24,3 +24,21 @@ for i in range(1, len(lst)) :
         if lst[j-1] > lst[j] :
             lst[j-1], lst[j] = lst[j], lst[j-1]
 print(lst)
+
+#카운팅 정렬
+lst = list(map(int, input().split()))
+buk = [0] * 10
+
+for i in lst :
+    buk[i] += 1
+    
+for i in range(1, len(buk)) :
+    buk[i] = buk[i-1] + buk[i]
+
+result = [0] * len(lst)
+
+for i in lst :
+    result[buk[i]-1] = i
+    buk[i] -= 1
+
+print(result)
