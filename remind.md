@@ -25,3 +25,42 @@ lst2[0][0] = 1
 print(lst)
 print(lst2)
 ```
+
+```
+lst = ['A','B','C','D','E']
+edge = [
+        [0,4,0,0,0],
+        [0,0,1,2,9],
+        [5,0,0,7,0],
+        [0,0,0,0,1],
+        [0,0,0,0,0]
+       ]
+visited = [0] * 5
+minn = 21e8
+def dfs(cur, sum) :
+    global minn
+
+    if lst[cur] == 'E' :
+        if minn > sum :
+            minn = sum
+
+    for i in range(len(edge[cur])) :
+        if edge[cur][i] > 0 :
+            if visited[i] == 1 : continue
+            visited[i] = 1
+
+            sum += edge[cur][i]
+            dfs(i, sum)
+
+            dfs(i, sum+edge[cur][i])
+
+            visited[i] = 0
+
+n = input()
+for st in range(len(lst)) :
+    if lst[st] == n :
+        visited[st] = 1
+        dfs(st, 0)
+
+print(minn)
+```
