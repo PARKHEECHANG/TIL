@@ -49,10 +49,10 @@ def dfs(cur, sum) :
             if visited[i] == 1 : continue
             visited[i] = 1
 
-            sum += edge[cur][i]
+<!--             sum += edge[cur][i]
             dfs(i, sum)
 
-            dfs(i, sum+edge[cur][i])
+            dfs(i, sum+edge[cur][i]) -->
 
             visited[i] = 0
 
