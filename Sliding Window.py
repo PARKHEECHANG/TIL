@@ -12,7 +12,7 @@ maxx = summ
 
 for i in range(n-m) :
     summ -= arr[i] # 첫 인덱스 줄이기
-    summ += arr[m+i] # 끝 인덱스 늘리기
+    summ += arr[m+i] # 끝 인덱스 늘리기,  ~arr[n-1]
     if summ > maxx :
         maxx = summ
 
