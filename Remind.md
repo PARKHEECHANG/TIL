@@ -17,7 +17,7 @@ print(lst)
 print(lst2)
 ```
 
-```
+```python
 # return 차이
 sum += edge[cur][i] 
 dfs(i, sum)
