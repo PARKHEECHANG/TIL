@@ -1,8 +1,9 @@
 lst = 'ABCD'
 n = int(input())
+
 path = [0] * n
 
-def abc(lv, st):
+def dfs(lv, st) :
 
     for i in range(lv) :
         print(path[i], end='')
@@ -11,8 +12,8 @@ def abc(lv, st):
     if lv == n :
         return
 
-    for i in range(st, 4):
+    for i in range(st, 4) :
         path[lv] = lst[i]
-        abc(lv+1, i+1)
+        dfs(lv+1, i+1)
 
-abc(0, 0)
+dfs(0, 0)
