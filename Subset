@@ -1,4 +1,4 @@
-```python
+'''python
 lst = 'ABCD'
 n = int(input())
 
@@ -18,9 +18,9 @@ def dfs(lv, st) :
         dfs(lv+1, i+1)
 
 dfs(0, 0)
-```
+'''
 
-```python
+'''python
 # 두 팀으로 나눠 전투력 차이의 최솟값 측정
 
 player = [49, 6, 54, 80, 3, 18, 71]
@@ -59,4 +59,4 @@ def dfs(lv, st) :
 
 dfs(0, 0)
 print('ans', Min)
-```
+'''
