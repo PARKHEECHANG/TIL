@@ -73,4 +73,4 @@ for i in range(5) :
 print(land_cnt)
 print(MAX_size)
 print(MIN_size)
-```python
+```
